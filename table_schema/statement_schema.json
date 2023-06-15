@@ -1,0 +1,417 @@
+[
+    {
+        "section": "Statement of operations",
+        "data": [
+            {
+                "items": [
+                    {
+                        "id": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "GrossProfit",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "OperatingExpenses",
+                        "weight": -1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "OperatingIncomeLoss",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "NetIncomeLoss",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "ComprehensiveIncomeNetOfTax",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "EarningsPerShareBasic",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "EarningsPerShareDiluted",
+                        "weight": 1,
+                        "role": "fact"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "Balance sheet",
+        "data": [
+            {
+                "items": [
+                    {
+                        "id": "Current assets",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "CashAndCashEquivalentsAtCarryingValue",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "MarketableSecuritiesCurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "AccountsReceivableNetCurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "InventoryNet",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "NontradeReceivablesCurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "OtherAssetsCurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "AssetsCurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Non-Current assets",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "MarketableSecuritiesNoncurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "PropertyPlantAndEquipmentNet",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "OtherAssetsNoncurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "AssetsNoncurrent",
+                                "weight": -1,
+                                "role": "fact"
+                            }
+                        ]
+                    }
+                ],
+                "total": {
+                    "id": "Assets",
+                    "weight": -1,
+                    "role": "total"
+                }
+            },
+            {
+                "items": [
+                    {
+                        "id": "Current liabilities",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "AccountsPayableCurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "OtherLiabilitiesCurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "ContractWithCustomerLiabilityCurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "CommercialPaper",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "LongTermDebtCurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "LiabilitiesCurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Non-Current liabilities",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "LongTermDebtNoncurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "OtherLiabilitiesNoncurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "LiabilitiesNoncurrent",
+                                "weight": 1,
+                                "role": "fact"
+                            }
+                        ]
+                    }
+                ],
+                "total": {
+                    "id": "Liabilities",
+                    "weight": -1,
+                    "role": "total"
+                }
+            },
+            {
+                "items": [
+                    {
+                        "id": "Shareholder's equity",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "CommonStocksIncludingAdditionalPaidInCapital",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "RetainedEarningsAccumulatedDeficit",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "StockholdersEquity",
+                                "weight": 1,
+                                "role": "fact"
+                            }
+                        ]
+                    }
+                ],
+                "total": {
+                    "id": "LiabilitiesAndStockholdersEquity",
+                    "weight": -1,
+                    "role": "total"
+                }
+            }
+        ]
+    },
+    {
+        "section": "Cash flows",
+        "data": [
+            {
+                "items": [
+                    {
+                        "id": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+                        "weight": -1,
+                        "role": "fact"
+                    }
+                ]
+            },
+            {
+                "items": [
+                    {
+                        "id": "NetIncomeLoss",
+                        "weight": 1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "Adjustments to reconcile net income to cash generated by operating activities",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "DepreciationDepletionAndAmortization",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "ShareBasedCompensation",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "OtherNoncashIncomeExpense",
+                                "weight": -1,
+                                "role": "fact"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Changes in operating assets and liabilities",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "IncreaseDecreaseInAccountsReceivable",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "IncreaseDecreaseInInventories",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "IncreaseDecreaseInOtherReceivables",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "IncreaseDecreaseInOtherOperatingAssets",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "IncreaseDecreaseInAccountsPayable",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "IncreaseDecreaseInOtherOperatingLiabilities",
+                                "weight": -1,
+                                "role": "fact"
+                            }
+                        ]
+                    }
+                ],
+                "total": {
+                    "id": "NetCashProvidedByUsedInOperatingActivities",
+                    "weight": 0,
+                    "role": "total"
+                }
+            },
+            {
+                "items": [
+                    {
+                        "id": "Investing activities",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "PaymentsToAcquirePropertyPlantAndEquipment",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "PaymentsForProceedsFromOtherInvestingActivities",
+                                "weight": -1,
+                                "role": "fact"
+                            }
+                        ]
+                    }
+                ],
+                "total": {
+                    "id": "NetCashProvidedByUsedInInvestingActivities",
+                    "weight": 0,
+                    "role": "total"
+                }
+            },
+            {
+                "items": [
+                    {
+                        "id": "Financing activities",
+                        "role": "category",
+                        "data": [
+                            {
+                                "id": "PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "PaymentsOfDividends",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "PaymentsForRepurchaseOfCommonStock",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "RepaymentsOfLongTermDebt",
+                                "weight": 1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "ProceedsFromRepaymentsOfCommercialPaper",
+                                "weight": -1,
+                                "role": "fact"
+                            },
+                            {
+                                "id": "ProceedsFromPaymentsForOtherFinancingActivities",
+                                "weight": -1,
+                                "role": "fact"
+                            }
+                        ]
+                    }
+                ],
+                "total": {
+                    "id": "NetCashProvidedByUsedInFinancingActivities",
+                    "weight": 0,
+                    "role": "total"
+                }
+            },
+            {
+                "items": [
+                    {
+                        "id": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+                        "weight": -1,
+                        "role": "fact"
+                    },
+                    {
+                        "id": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+                        "weight": 1,
+                        "role": "fact"
+                    }
+                ]
+            }
+        ]
+    }
+]
